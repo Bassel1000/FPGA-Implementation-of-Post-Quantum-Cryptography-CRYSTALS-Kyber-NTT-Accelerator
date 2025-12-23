@@ -1,0 +1,63 @@
+vsim -gui work.tb_ntt_top
+# vsim -gui work.tb_ntt_top 
+# Start time: 12:14:17 on Dec 23,2025
+# Loading work.tb_ntt_top
+# Loading work.Kyber_NTT_Top
+# Loading work.NTT_Control
+# Loading work.KyberRAM
+# Loading work.TwiddleROM
+# Loading work.Butterfly
+# Loading work.ModMul
+# Loading work.ModAdd
+# Loading work.ModSub
+add wave -position end  sim:/tb_ntt_top/clk
+add wave -position end  sim:/tb_ntt_top/uut/control_unit/state
+add wave -position end  sim:/tb_ntt_top/uut/control_unit/ram_addr_a
+add wave -position end  sim:/tb_ntt_top/uut/control_unit/ram_we
+add wave -position end  sim:/tb_ntt_top/debug_ram_out_a
+add wave -position end  sim:/tb_ntt_top/uut/bfly_out_even
+run
+run -all
+# Starting NTT Control Logic Simulation...
+# --- Processing Complete ---
+# SUCCESS: Memory updated correctly!
+# Mem[0]   =  128 (Expected 128)
+# Mem[128] = 3201 (Expected 3201)
+# ** Note: $stop    : C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_ntt_top.v(76)
+#    Time: 2715 ns  Iteration: 0  Instance: /tb_ntt_top
+# Break in Module tb_ntt_top at C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_ntt_top.v line 76
+restart -f
+run 500 ns
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Starting NTT Control Logic Simulation...
+restart -f
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Starting NTT Control Logic Simulation...
+# --- Processing Complete ---
+# SUCCESS: Memory updated correctly!
+# Mem[0]   =  128 (Expected 128)
+# Mem[128] = 3201 (Expected 3201)
+# ** Note: $stop    : C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_ntt_top.v(76)
+#    Time: 2715 ns  Iteration: 0  Instance: /tb_ntt_top
+# Break in Module tb_ntt_top at C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_ntt_top.v line 76
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run -all
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+# Starting NTT Control Logic Simulation...
+# --- Processing Complete ---
+# SUCCESS: Memory updated correctly!
+# Mem[0]   =  128 (Expected 128)
+# Mem[128] = 3201 (Expected 3201)
+# ** Note: $stop    : C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_ntt_top.v(76)
+#    Time: 2715 ns  Iteration: 0  Instance: /tb_ntt_top
+# Break in Module tb_ntt_top at C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_ntt_top.v line 76
+# End time: 17:03:10 on Dec 23,2025, Elapsed time: 4:48:53
+# Errors: 0, Warnings: 1

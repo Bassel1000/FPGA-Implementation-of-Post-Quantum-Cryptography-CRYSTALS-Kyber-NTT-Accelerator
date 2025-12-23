@@ -1,0 +1,82 @@
+`timescale 1ns / 1ps
+
+module NTT_Control (
+    input wire clk,
+    input wire rst,
+    input wire start,
+    
+    // Connections to RAM
+    output reg [7:0] ram_addr_a,
+    output reg [7:0] ram_addr_b,
+    output reg ram_we,
+    
+    // Connections to ROM
+    output reg [6:0] rom_addr,
+    
+    output reg done
+);
+
+    reg [7:0] counter;
+    reg [1:0] state;
+
+    // States
+    localparam IDLE  = 0;
+    localparam LOAD  = 1; // New State: Read data from RAM
+    localparam STORE = 2; // New State: Write result back to RAM
+    localparam DONE  = 3;
+
+    always @(posedge clk or posedge rst) begin
+        if (rst) begin
+            state <= IDLE;
+            counter <= 0;
+            ram_we <= 0;
+            done <= 0;
+            ram_addr_a <= 0;
+            ram_addr_b <= 0;
+            rom_addr <= 0;
+        end else begin
+            case (state)
+                IDLE: begin
+                    ram_we <= 0;
+                    if (start) begin
+                        state <= LOAD;
+                        counter <= 0;
+                        done <= 0;
+                    end
+                end
+
+                LOAD: begin
+                    // Step 1: Set Address and READ (WE = 0)
+                    ram_addr_a <= counter;
+                    ram_addr_b <= counter + 8'd128;
+                    rom_addr <= 1; // Constant for this test stage
+                    
+                    ram_we <= 0; // Disable write, just read!
+                    
+                    state <= STORE; // Go to write state next
+                end
+
+                STORE: begin
+                    // Step 2: Keep Address and WRITE (WE = 1)
+                    // The RAM has now updated 'dout', so the Butterfly output is valid.
+                    ram_we <= 1; 
+
+                    if (counter == 127) begin
+                        state <= DONE;
+                        ram_we <= 0; // Safety: turn off write immediately
+                    end else begin
+                        counter <= counter + 1;
+                        state <= LOAD; // Go back to load next pair
+                    end
+                end
+
+                DONE: begin
+                    done <= 1;
+                    ram_we <= 0;
+                    state <= IDLE;
+                end
+            endcase
+        end
+    end
+
+endmodule

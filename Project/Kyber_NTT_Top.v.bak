@@ -1,0 +1,55 @@
+`timescale 1ns / 1ps
+
+module Kyber_NTT_Top (
+    input wire clk,
+    input wire rst,
+    input wire start,
+    output wire done,
+    
+    // Debug outputs to see what's happening inside
+    output wire [11:0] debug_ram_out_a,
+    output wire [11:0] debug_ram_out_b
+);
+
+    // Internal Wires
+    wire [7:0] addr_a, addr_b;
+    wire [11:0] ram_out_a, ram_out_b; // Data coming OUT of RAM
+    wire [11:0] bfly_out_even, bfly_out_odd; // Data coming OUT of Butterfly
+    wire [11:0] zeta;
+    wire we;
+
+    // 1. Instantiate Controller
+    NTT_Control control_unit (
+        .clk(clk), .rst(rst), .start(start),
+        .ram_addr_a(addr_a), .ram_addr_b(addr_b),
+        .ram_we(we), .rom_addr(), .done(done)
+    );
+
+    // 2. Instantiate RAM
+    KyberRAM ram_unit (
+        .clk(clk), .we(we),
+        .addr_a(addr_a), .addr_b(addr_b),
+        .din_a(bfly_out_even), .din_b(bfly_out_odd), // Loopback: Result goes back to RAM
+        .dout_a(ram_out_a), .dout_b(ram_out_b)
+    );
+
+    // 3. Instantiate Twiddle ROM
+    TwiddleROM rom_unit (
+        .addr(7'd1), // Fixed for this test stage
+        .zeta(zeta)
+    );
+
+    // 4. Instantiate Butterfly Unit (The Math Engine)
+    Butterfly math_engine (
+        .a(ram_out_a), 
+        .b(ram_out_b), 
+        .w(zeta), 
+        .even(bfly_out_even), 
+        .odd(bfly_out_odd)
+    );
+    
+    // Assign Debugs
+    assign debug_ram_out_a = ram_out_a;
+    assign debug_ram_out_b = ram_out_b;
+
+endmodule

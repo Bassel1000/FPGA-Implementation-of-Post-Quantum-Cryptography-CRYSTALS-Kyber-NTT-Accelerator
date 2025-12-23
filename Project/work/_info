@@ -1,0 +1,249 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+vButterfly
+Z0 !s110 1765022029
+!i10b 1
+!s100 58G3I`=g`Y><gc?REiiJJ1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IN<[II>XSIX1>n`T`i8?o03
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dC:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project
+w1765020337
+8C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/Butterfly.v
+FC:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/Butterfly.v
+!i122 53
+L0 3 32
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1765022029.000000
+!s107 C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/Butterfly.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/Butterfly.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@butterfly
+vKyber_NTT_Top
+Z8 !s110 1765022030
+!i10b 1
+!s100 4M5?O`@4>I_ho@HIUjAkG3
+R1
+IEP@V74hkUOK_3C^@lj^n]2
+R2
+R3
+w1765022019
+8C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/Kyber_NTT_Top.v
+FC:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/Kyber_NTT_Top.v
+!i122 58
+L0 3 55
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/Kyber_NTT_Top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/Kyber_NTT_Top.v|
+!i113 1
+R6
+R7
+n@kyber_@n@t@t_@top
+vKyberRAM
+R0
+!i10b 1
+!s100 CZOl4MGnZ4_`h70C91m6X0
+R1
+I8YP5^IeP[GoJzZjb?iYaV0
+R2
+R3
+w1765020830
+8C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/KyberRAM.v
+FC:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/KyberRAM.v
+!i122 55
+L0 3 33
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/KyberRAM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/KyberRAM.v|
+!i113 1
+R6
+R7
+n@kyber@r@a@m
+vModAdd
+!s110 1765022028
+!i10b 1
+!s100 acCEO5lP5hI=gjLNb4=>I1
+R1
+IBBJij_FN2AcSTCTnn@H=]3
+R2
+R3
+w1765020293
+8C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/ModAdd.v
+FC:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/ModAdd.v
+!i122 50
+Z9 L0 3 14
+R4
+r1
+!s85 0
+31
+Z10 !s108 1765022028.000000
+!s107 C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/ModAdd.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/ModAdd.v|
+!i113 1
+R6
+R7
+n@mod@add
+vModMul
+R0
+!i10b 1
+!s100 al0<8__[Xm0;cjohmPJ5U3
+R1
+IQZlm8^EoFhj5Tz5kR8`Ki3
+R2
+R3
+w1765020322
+8C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/ModMul.v
+FC:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/ModMul.v
+!i122 52
+R9
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/ModMul.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/ModMul.v|
+!i113 1
+R6
+R7
+n@mod@mul
+vModSub
+R0
+!i10b 1
+!s100 BTlG_=z00nYKd@F=MR>Z]1
+R1
+IHP]V2^HDf=GAb@ZT0[AJe0
+R2
+R3
+w1765020312
+8C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/ModSub.v
+FC:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/ModSub.v
+!i122 51
+L0 3 16
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/ModSub.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/ModSub.v|
+!i113 1
+R6
+R7
+n@mod@sub
+vNTT_Control
+R0
+!i10b 1
+!s100 S7aih0O]F0UQ`8A<2@]e03
+R1
+I:5]hL`_H:YgFL7GXFzazH2
+R2
+R3
+w1765021593
+8C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/NTT_Control.v
+FC:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/NTT_Control.v
+!i122 57
+L0 3 80
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/NTT_Control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/NTT_Control.v|
+!i113 1
+R6
+R7
+n@n@t@t_@control
+vtb_butterfly
+R0
+!i10b 1
+!s100 nf1_>F>MQSN4QzzfVkKa>1
+R1
+I3RQW1Mk]2[]K^[Q`U[V6=3
+R2
+R3
+w1765020348
+8C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_butterfly.v
+FC:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_butterfly.v
+!i122 54
+L0 3 52
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_butterfly.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_butterfly.v|
+!i113 1
+R6
+R7
+vtb_ntt_top
+R8
+!i10b 1
+!s100 _TM8TF?O>55V9NO0W;f[91
+R1
+I<E:M`Gd38g`Aa=@R3[JOg0
+R2
+R3
+w1765020823
+8C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_ntt_top.v
+FC:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_ntt_top.v
+!i122 59
+L0 3 77
+R4
+r1
+!s85 0
+31
+!s108 1765022030.000000
+!s107 C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_ntt_top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/tb_ntt_top.v|
+!i113 1
+R6
+R7
+vTwiddleROM
+R0
+!i10b 1
+!s100 [TGmJEPPzh0[b;Kh6eS0T3
+R1
+ITW_PF9hYW`VabzFGHYD3D2
+R2
+R3
+w1765020828
+8C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/TwiddleROM.v
+FC:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/TwiddleROM.v
+!i122 56
+L0 3 18
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/TwiddleROM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/basse/OneDrive - King Salman International University/Semester 9/Selected Topics in Information Security/Project/TwiddleROM.v|
+!i113 1
+R6
+R7
+n@twiddle@r@o@m
