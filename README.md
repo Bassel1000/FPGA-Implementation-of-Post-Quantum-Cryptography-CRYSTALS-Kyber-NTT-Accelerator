@@ -1,4 +1,10 @@
 # FPGA-Implementation-of-Post-Quantum-Cryptography-CRYSTALS-Kyber-NTT-Accelerator
+
+![Verilog](https://img.shields.io/badge/Language-Verilog-blue)
+![Status](https://img.shields.io/badge/Status-Simulation_Verified-green)
+![Standard](https://img.shields.io/badge/Standard-NIST_ML--KEM-orange)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 ## 📌 Project Overview
 
 This project presents the hardware design and simulation of a Number Theoretic Transform (NTT) accelerator for the CRYSTALS-Kyber (now standardized as ML-KEM) algorithm.
@@ -14,7 +20,7 @@ The design was implemented in Verilog HDL and verified via behavioral simulation
 - [Yousef Elsaket](https://github.com/aminayssar)
 
 
-Date: December 2025
+Date: December 23, 2025
 
 ## ⚙️ System Architecture
 
@@ -79,4 +85,4 @@ The design was verified using ModelSim. The testbench initializes memory with se
 
 ## 📜 License
 
-This project is open-source and available for educational and research purposes.
+Distributed under the MIT License. See `LICENSE` for more information.
